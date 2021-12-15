@@ -1,4 +1,5 @@
 <?php
+/*ik heb GET gebruikt omdat max zei dat het beter is*/
 echo "de zojuist ingevulde gegevens:". "<br>" . $_GET['first-name'] . "<br>";
 echo $_GET['last-name'] . "<br>";
 echo $_GET['klas'] . "<br>";
