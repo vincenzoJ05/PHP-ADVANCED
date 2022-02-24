@@ -1,19 +1,20 @@
 <?php
 /*ik heb GET gebruikt omdat ik wil zien hoe het eruit ziet in de url beter is*/
 $zinnen = [
-    "firstName" => "Voornaam: ",
-    "lastName" => "Achternaam: ",
+    "firstname" => "Voornaam: ",
+    "lastname" => "Achternaam: ",
     "class" => "Klas: ",
     "age" => "Leeftijd: ",
-    "placeName" => "Plaatsnaam: ", 
+    "adres" => "adres: ",
+    "placename" => "Plaatsnaam: ", 
     "favemusicband" => "Favoriete muziek band: ",
     "gender" => "Geslacht: ",
-    "Color" => "Kleur: " 
+    "kleur" => "Kleur: " 
 ];
 
 
-foreach($$_GET as $key => $value){
-    echo $zinnen['$key'].$value."<br>"; 
+foreach($_GET as $key => $value){
+    echo $zinnen[$key].$value."<br>"; 
 }
 
 echo "<body style='background-color:".$_GET['kleur']."'>";
