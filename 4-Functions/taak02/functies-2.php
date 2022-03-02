@@ -9,18 +9,15 @@
 <body>
     
 <?php
-function rekenUit($num1, $num2, $num3){
-   $antwoord = $num1 + $num2 + $num3;
-   return $antwoord;
+function rekenUit($num1,$num2,$num3){
+   $answer = $num1+$num2+$num3;
+   return $answer;
 }
 
-$answer1 = rekenUit(5, 10, 5);
-$answer2 = rekenUit(43365, 84396398, 962694);
-$answer3 = rekenUit(5511984.266484, 145867225.7, 5);
+echo "als ik de getallen 5, 2 en 7 bij elkaar optel, is de uitkomst: ".rekenUit(5,2,7)."<br>";
+echo "als ik de getallen 2, 4584 en 808 bij elkaar optel, is de uitkomst: ".rekenUit(2,4584,808)."<br>";
+echo "als ik de getallen 1, 1 en 1 bij elkaar optel, is de uitkomst: ".rekenUit(1,1,1);
 
-echo $answer1 . "<br>";
-echo $answer2 . "<br>";
-echo $answer3 . "<br>";
 ?>
 </body>
 </html>
