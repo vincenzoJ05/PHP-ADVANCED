@@ -9,7 +9,6 @@
 <body>
 
 <?php
-/*ik heb GET gebruikt omdat ik wil zien hoe het eruit ziet in de url beter is*/
 $zinnen = [
     "firstname" => "Voornaam: ",
     "lastname" => "Achternaam: ",
@@ -22,7 +21,7 @@ $zinnen = [
     "kleur" => "Kleur: " 
 ];
 
-foreach($_GET as $key => $value){
+foreach($_POST as $key => $value){
     echo $zinnen[$key].$value."<br>"; 
 }
 
