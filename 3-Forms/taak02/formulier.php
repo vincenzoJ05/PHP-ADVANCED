@@ -22,7 +22,7 @@
         <?php 
         $lievelingskleuren = ['blue' , 'red' , 'yellow' , 'green'];
         foreach($lievelingskleuren as $lievelingskleur){
-             echo "<option value= '$lievelingskleur' selected>$lievelingskleur</option>";
+             echo "<option value='$lievelingskleur'selected>$lievelingskleur</option>";
         }
         ?>
     </select>

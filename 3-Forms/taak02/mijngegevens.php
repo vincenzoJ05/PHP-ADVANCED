@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result</title>
 </head>
-<body>
+<body style="background-color: <?php echo $_POST['kleur'] ?>">
 
 <?php
 $zinnen = [
@@ -25,9 +25,7 @@ foreach($_POST as $key => $value){
     echo $zinnen[$key].$value."<br>"; 
 }
 
-echo "<body style='background-color:".$_GET['kleur']."'>";
 ?>   
-
 </body>
 </html>
 
